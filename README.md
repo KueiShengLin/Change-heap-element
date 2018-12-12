@@ -1,2 +1,5 @@
 # Change-heap-element
-Enhance the heapq that it can change the element in the heap
+change the element in the heapq h
+
+Input heapq h and need changed item
+Output the new heap that change the old item to the input item
