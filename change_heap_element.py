@@ -10,17 +10,16 @@ def change_element(h, item):
             h[now] = (new_value, tag)
 
             while True:
-                min_child = now * 2 + 1
-
                 if now != 0:
                     parent = floor((now - 1) / 2)
                     if new_value < h[parent][0]:
                         swap(h, now, parent)
                         now = parent
-
+                        continue
                     if now == 0:
                         break
 
+                min_child = now * 2 + 1
                 if min_child < len(h):
                     # Check which child is min
                     if min_child + 1 <= len(h):
